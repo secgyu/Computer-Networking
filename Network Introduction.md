@@ -36,3 +36,6 @@
   <ul>
     <li><b>DNS 루트 네임 서버</b>
   </ul>
+<h2><style="border-bottom: 2px solid black;">호스트, 스위치, 라우터, 통신링크</h2>
+<td style="text-align: center;">
+      <img src="https://github.com/secgyu/Computer-Networking/blob/main/%EC%9D%B4%EB%AF%B8%EC%A7%801.png" alt="네트워크 설정 정보">
