@@ -1,4 +1,4 @@
-#네트워크 소개
+# 네트워크 소개
 <table>
   <tr>
     <td>
@@ -11,7 +11,7 @@
         <li>— 구글 public DNS 서비스 IP 주소</li>
       </ul>
     </td>
-    <td align="right">
+    <td style="text-align: right;">
       <img src="https://github.com/secgyu/Computer-Networking/blob/main/%EC%9D%B4%EB%AF%B8%EC%A7%801.png" alt="네트워크 설정 정보">
     </td>
   </tr>
