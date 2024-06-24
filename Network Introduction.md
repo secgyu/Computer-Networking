@@ -12,7 +12,7 @@
       </ul>
     </td>
     <td align="right">
-      <img src="C:\Users\dkk22\OneDrive\바탕 화면\네트워크 이미지/이미지1.png" alt="네트워크 설정 정보">
+      <img src="dir "C:\Users\dkk22\OneDrive\바탕 화면\네트워크 이미지\이미지1.png" alt="네트워크 설정 정보">
     </td>
   </tr>
 </table>
