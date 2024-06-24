@@ -12,8 +12,7 @@
       </ul>
     </td>
     <td align="right">
-      <img src="dir "C:\Users\dkk22\OneDrive\바탕 화면\네트워크 이미지\이미지1.png" alt="네트워크 설정 정보">
+      <img src="https://github.com/secgyu/Computer-Networking/blob/main/%EC%9D%B4%EB%AF%B8%EC%A7%801.png" alt="네트워크 설정 정보">
     </td>
   </tr>
 </table>
-
