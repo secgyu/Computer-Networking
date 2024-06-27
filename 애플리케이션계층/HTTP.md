@@ -85,7 +85,16 @@ Connection: close
 User-Agent: Mozilla/5.0
 Accept-Language: ko-KR
 ```
-
+HTTP요청메시지 → 요청라인(request line), 헤더라인(header line)들, 공백라인, optional Message BODY로 구성
+- 요청라인, 헤더라인은 CRLF(\r\n)로 끝나야 함
+- 요청라인 → 메소드(method), URL, HTTP버전의 3개 필드의 값들이 공백으로 분리되어 구성
+- 메소드(요청종류) 필드 값으로 GET, POST, PUT, HEAD, DELETE 등이 가능함 (메소드 이름은 대문자로 표기, 참조: rfc7231)
+- 메소드 GET은 URL로 식별되는 객체를 요청함을 의미
+- Message body는 GET 방식에서는 비어 있고, POST 방식에서는 사용됨
+- Host: www.example.com → 객체가 존재하는 호스트 (및 포트번호) 명시 (포트번호 명시 예: Host: www.example.com:8080)
+- Connection: close → 현재 request/response 완료 후 연결 종료될 것임을 의미
+- User-Agent: Mozilla/5.0 → 브라우저에 대한 정보 제공
+- Accept-Language: ko-KR → 한국어 버전 객체를 선호함
 
 ## HTTP 응답 메시지 포맷
 
@@ -111,3 +120,16 @@ Content-Type: text/html
 <body>Welcome to Busan!</body>
 </html>
 ```
+HTTP응답메시지 → 상태라인(status line), 헤더라인, 공백라인, optional Message Body로 구성
+- 요청라인, 헤더라인은 CRLF(\r\n)로 끝나야 함
+- 상태라인 → HTTP버전, 상태코드, 사유 문구(reason phrase)의 3개 필드 값들이 공백으로 분리되어 구성
+- Content-Length: 100 → 송신되는 객체의 바이트 크기
+- Content-Type: text/html → 송신되는 객체가 html 텍스트임
+- Date: Sun, 23 Jan 2022 21:34:56 GMT  응답메시지 생성/송신일시
+- Last-Modified: Fri, 21 Jan 2022 11:22:33 GMT  객체의 마지막 수정일시
+
+**상태코드 및 사유 문구**  
+200 OK  요청 성공  
+304 Not Modified → 변경되지 않음  
+400 Bad Request → 요청 이해 불가  
+404 Not Found → 요청 객체 없음
