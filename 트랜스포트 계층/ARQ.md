@@ -55,25 +55,25 @@ Selective Repeat ARQ 과정
 ...
 ```
 
-** 🔧 ARQ의 흐름 제어
-*** 🛑 Stop-and-Wait ARQ 흐름 제어
+## 🔧 ARQ의 흐름 제어
+### 🛑 Stop-and-Wait ARQ 흐름 제어
 - **장점**: 구현이 간단하고 이해하기 쉬움.
 - **단점**: 전송 효율이 낮음. 송신자가 매번 ACK를 기다려야 하므로 대기 시간이 길어짐.
 
-*** 🔄 Go-Back-N ARQ 흐름 제어
+### 🔄 Go-Back-N ARQ 흐름 제어
 - **장점**: 전송 효율이 Stop-and-Wait ARQ보다 높음. 여러 프레임을 연속적으로 전송할 수 있음.
 - **단점**: 오류가 발생하면 해당 프레임 이후의 모든 프레임을 재전송해야 하므로 불필요한 데이터 재전송이 발생할 수 있음.
 
-*** ✅ Selective Repeat ARQ 흐름 제어
+### ✅ Selective Repeat ARQ 흐름 제어
 - **장점**: 전송 효율이 가장 높음. 오류가 발생한 프레임만 재전송하므로 불필요한 데이터 재전송이 없음.
 - **단점**: 구현이 복잡하고, 송신자와 수신자 모두에서 버퍼를 유지해야 함.
 
-** 💬 ARQ 사용 사례
+## 💬 ARQ 사용 사례
 ARQ는 신뢰성 있는 데이터 전송이 필요한 다양한 네트워크 프로토콜에서 사용됩니다.   
 예를 들어, **TCP(Transmission Control Protocol)**, **HDLC(High-Level Data Link Control)**, **PPP(Point-to-Point Protocol)** 등이 있습니다.
 
-** ⚖️ ARQ 유형 비교
-| **특징** | **Stop-and-Wait ARQ** | **	Go-Back-N ARQ** | **Selective Repeat ARQ** |
+## ⚖️ ARQ 유형 비교
+| **특징** | **Stop-and-Wait ARQ** | **Go-Back-N ARQ** | **Selective Repeat ARQ** |
 | --- | --- | --- | --- |
 | **전송 효율** | 낮음 | 중간 | 높음 |
 | **오류 발생 시 재전송** | 단일 프레임 | 오류 발생 프레임 이후 모든 프레임 | 오류 발생 프레임만 | 
